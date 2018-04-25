@@ -1,6 +1,6 @@
 {
   "name": "mapsapi-boilerplate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Yandex.Maps API module for data visualization.",
   "keywords": [
     "yandex",
