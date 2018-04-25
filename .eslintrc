@@ -6,6 +6,9 @@
     "es6": true,
     "mocha": true
   },
+  "globals": {
+    "ymaps": true
+  },
   "rules": {
     "strict": ["error", "never"],
     "curly": [0, "multi"],
