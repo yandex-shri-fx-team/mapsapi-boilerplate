@@ -1,8 +1,14 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/examples/index.js',
+    output: {
+        path: __dirname + '/examples'
+    },
+    optimization: {
+        minimize: false
+    },
     module: {
         rules: [
             {
@@ -30,3 +36,4 @@ module.exports = {
         })
     ]
 };
+

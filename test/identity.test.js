@@ -1,12 +1,12 @@
 import {describe, it} from 'mocha';
 import {expect} from 'chai';
 
-import Boilerplate from '../src/Boilerplate/Boilerplate';
+import identity from '../src/Boilerplate/utils/identity';
 
-describe('Boilerplate', () => {
+describe('identity', () => {
     it('should work', () => {
         const expected = 'It\'s work!';
-        const result = Boilerplate();
+        const result = identity(expected);
 
         expect(result).to.be.equal(expected);
     });

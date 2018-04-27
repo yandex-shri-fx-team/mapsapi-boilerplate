@@ -7,10 +7,12 @@
     "maps",
     "boilerplate"
   ],
-  "main": "build/boilerplate.min.js",
+  "main": "umd/boilerplate.min.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --config webpack.development.js --open",
-    "build": "webpack --mode production --config webpack.production.js ./src/Boilerplate/Boilerplate.js --output ./build/boilerplate.min.js",
+    "build": "npm run build-module && npm run build-examples",
+    "build-module": "webpack --mode production --config webpack.module.js",
+    "build-examples": "webpack --mode production --config webpack.examples.js",
     "lint": "eslint src/**/*.js",
     "test": "mocha -r babel-core/register test/{**/*,*}.test.js"
   },
