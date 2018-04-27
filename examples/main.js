@@ -130,7 +130,7 @@ __webpack_require__(1);
 
 ymaps.ready(function () {
     // eslint-disable-next-line no-unused-vars
-    var myMap = new ymaps.Map('root', {
+    var myMap = new ymaps.Map('map', {
         center: [55.76, 37.64],
         zoom: 10,
         controls: ['zoomControl', 'typeSelector', 'fullscreenControl']
