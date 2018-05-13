@@ -1,9 +1,10 @@
 {
-  "name": "mapsapi-boilerplate",
+  "name": "ymaps-boilerplate",
   "version": "0.0.1",
   "description": "Yandex.Maps API module for data visualization.",
   "keywords": [
     "yandex",
+    "ymaps",
     "maps",
     "boilerplate"
   ],
@@ -50,12 +51,12 @@
   },
   "author": "",
   "license": "MIT",
-  "homepage": "https://github.com/yandex-shri-fx-team/mapsapi-boilerplate#readme",
+  "homepage": "https://github.com/yandex-shri-fx-team/ymaps-boilerplate#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yandex-shri-fx-team/mapsapi-boilerplate.git"
+    "url": "git+https://github.com/yandex-shri-fx-team/ymaps-boilerplate.git"
   },
   "bugs": {
-    "url": "https://github.com/yandex-shri-fx-team/mapsapi-boilerplate/issues"
+    "url": "https://github.com/yandex-shri-fx-team/ymaps-boilerplate/issues"
   }
 }
