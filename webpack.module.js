@@ -1,6 +1,5 @@
 module.exports = {
-    mode: 'production',
-    entry: './src/Boilerplate/Boilerplate.js',
+    entry: './src/Boilerplate.js',
     output: {
         filename: 'boilerplate.min.js',
         path: __dirname + '/umd'

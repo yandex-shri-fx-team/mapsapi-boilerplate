@@ -1,21 +1,22 @@
 {
-  "name": "mapsapi-boilerplate",
+  "name": "ymaps-boilerplate",
   "version": "0.0.1",
   "description": "Yandex.Maps API module for data visualization.",
   "keywords": [
     "yandex",
+    "ymaps",
     "maps",
     "boilerplate"
   ],
-  "main": "umd/boilerplate.min.js",
+  "main": "src/Boilerplate.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development --config webpack.development.js --open",
+    "dev": "webpack-dev-server --mode development --config webpack.examples.js --open",
     "build": "npm run build-module && npm run build-examples",
     "build-module": "webpack --mode production --config webpack.module.js",
     "build-examples": "webpack --mode production --config webpack.examples.js",
-    "deploy": "gh-pages -d examples",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint src/**/*.js",
-    "test": "mocha -r babel-core/register test/{**/*,*}.test.js"
+    "test": "mocha -r babel-core/register src/**/*.test.js"
   },
   "husky": {
     "hooks": {
@@ -50,12 +51,12 @@
   },
   "author": "",
   "license": "MIT",
-  "homepage": "https://github.com/yandex-shri-fx-team/mapsapi-boilerplate#readme",
+  "homepage": "https://github.com/yandex-shri-fx-team/ymaps-boilerplate#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yandex-shri-fx-team/mapsapi-boilerplate.git"
+    "url": "git+https://github.com/yandex-shri-fx-team/ymaps-boilerplate.git"
   },
   "bugs": {
-    "url": "https://github.com/yandex-shri-fx-team/mapsapi-boilerplate/issues"
+    "url": "https://github.com/yandex-shri-fx-team/ymaps-boilerplate/issues"
   }
 }
