@@ -5,8 +5,10 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 indent_style = spaces
-indent_size = 4
 end_of_line = lf
+
+[*.{js,html,css}]
+indent_size = 4
 
 [*.{json,yml}]
 indent_size = 2
