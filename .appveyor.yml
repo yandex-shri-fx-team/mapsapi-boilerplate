@@ -1,0 +1,24 @@
+init:
+  - git config --global core.autocrlf true
+environment:
+  matrix:
+    - nodejs_version: "8"
+    - nodejs_version: "6"
+cache:
+  - node_modules
+clone_depth: 50
+matrix:
+  fast_finish: true
+platform:
+  - x64
+install:
+  - ps: Install-Product node $env:nodejs_version $env:platform
+  - npm install
+build: off
+skip_commits:
+  files:
+    - '**/*.md'
+test_script:
+  - node --version
+  - npm --version
+  - npm test
