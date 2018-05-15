@@ -12,6 +12,7 @@ ymaps.modules.define('Boilerplate', [
     /**
      * @param {Object} [data] Data.
      * @param {Object} [options] Options for customization.
+     * @alias module:Boilerplate
      */
     class Boilerplate {
         construcotor(data, options) {
@@ -36,8 +37,6 @@ ymaps.modules.define('Boilerplate', [
          *
          * @public
          * @param {Object} data Data.
-         *  {Object} data.polygons GeoJSON FeatureCollections.
-         *  {Object} data.points GeoJSON FeatureCollections.
          * @returns {Polygonmap} Self-reference.
          */
         setData(data) {
