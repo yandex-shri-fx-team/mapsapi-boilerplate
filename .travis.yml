@@ -8,3 +8,4 @@ cache:
 script:
   - commitlint-travis
   - npm test
+after_success: npm run coverage
